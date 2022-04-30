@@ -1,0 +1,10 @@
+@use "../../scss/" as *;
+
+.chart_container {
+  margin-top: 2rem;  
+  width: 550px;
+
+  @include tablet {
+    width: 100%;
+  }
+}

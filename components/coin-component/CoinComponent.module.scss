@@ -1,0 +1,80 @@
+@use "../../scss/" as *;
+
+.coin_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: $border-radius;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .coin_content {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+    @include tablet {
+      flex-direction: column;
+      text-align: left;
+      margin-left: 1rem;
+    }
+  }
+
+  .coin {
+    &_name {
+      width: 30%;
+      font-size: 1.2rem;
+      color: #fff;
+
+      @include tablet {
+        font-size: 0.8rem;
+      }
+    }
+
+    &_symbol {
+      width: 20%;
+      font-size: 1rem;
+      color: #fff;
+
+      @include tablet {
+        font-size: 0.8rem;
+      }
+    }
+
+    &_marketcap {
+      font-size: 1rem;
+      color: #fff;
+
+      @include tablet {
+        font-size: 0.8rem;
+      }
+    }
+
+    &_price {
+      font-size: 1rem;
+      color: #fff;
+
+      @include tablet {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

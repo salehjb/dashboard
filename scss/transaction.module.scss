@@ -1,0 +1,22 @@
+@use "../scss/" as *;
+
+.transaction_container {
+  @include tablet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .transaction_total_profit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-right: 0.5rem;
+    }
+  }
+}
